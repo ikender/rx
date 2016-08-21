@@ -4,10 +4,19 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "rutorika/laravel-html": "dev-laravel-5.2 as 0.0.1"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/boxfrommars/rutorika-laravel-html.git"
+        }
+    ],
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",

@@ -153,6 +153,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Rutorika\Html\HtmlServiceProvider::class,
 
 
         /*
@@ -208,7 +209,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Form' => Rutorika\Html\FormFacade::class,
+        'Html' => Rutorika\Html\HtmlFacade::class,
     ],
 
 ];
