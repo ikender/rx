@@ -12,7 +12,10 @@
 {!! Form::open(array('url' => 'results')) !!}
 
 {!! Form::geopointField('Starting Point (click on map)', 'lat_lon', null, ['map' => ['center' => [38.9252, -94.4165], 'zoom' => 8], 'layer' => 'bing', 'type' => 'AerialWithLabels']) !!}
-{!! Form::selectField('Number of results', 'qty', [5 => 5, 10 => 10, 25 => 25, 50 => 50]) !!}
+{!! Form::selectField('Number of results', 'qty', $limit) !!}
+<div class="col-sm-7 col-xs-6 col-sm-push-1">{!! Form::selectField('Distance', 'distance', $radii) !!}</div>
+<div class="col-sm-4 col-xs-6">{!! Form::selectField('&nbsp;', 'distance_units', $distance_units) !!}</div>
+
 
 {!! Form::submitField() !!}
 {!! Form::close() !!}
