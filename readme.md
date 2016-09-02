@@ -30,3 +30,10 @@ this requires 1 modification to a vendor file, unfortunate, but the code was wri
  +        $this->app->singleton('form', function ($app) {
  +            $form = new FormBuilder($app['html'], $app['url'], $app['view'], $app['session.store']->getToken());
 ```
+
+Once done, uncomment the line commented above 
+
+`config/app.php`
+```
+        Rutorika\Html\HtmlServiceProvider::class,
+```

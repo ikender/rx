@@ -18,3 +18,5 @@ Route::get('/', function () {
 
     return view('form', ['distance_units' => $distance_units, 'radii' => $radii, 'limit' => $limit]);
 });
+
+Route::get('/results', 'DistanceController@getLocations');
