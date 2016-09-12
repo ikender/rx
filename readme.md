@@ -2,6 +2,9 @@
 
 This is a rework of the code challange, presented by RX Savings solutions.  My original was not as advanced as I liked, so I figured I would redo it in a Laravel environment.
 
+This should output a form, with a GET method and a clickable map giving lat and lon coords.
+
+
 ## Installation
 
 After you have the files downloaded, you will need to comment out line 156 of the config file
@@ -37,3 +40,6 @@ Once done, uncomment the line commented above
 ```
         Rutorika\Html\HtmlServiceProvider::class,
 ```
+
+## ToDo
+Clean up the main query
